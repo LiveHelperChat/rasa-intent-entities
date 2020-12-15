@@ -1,0 +1,19 @@
+version: "2.0"
+
+nlu:
+- intent: faq/ask_location
+  examples: |
+    - where do you live?
+
+- intent: faq/ask_gender
+  examples: |
+    - may i know your gender?
+
+- intent: stock_price
+  examples: |
+    - what's the price of the [apple](stock)?
+    - how much does the [apple](stock) costs?
+    - [apple](stock) price?
+    - [google](stock) cost?
+    - [google](stock) stock price?
+    - [ms](stock) cost?

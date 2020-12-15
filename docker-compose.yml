@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  rasa-faq-entity:
+    container_name: rasa-faq-entity
+    image: rasa-faq-entity:latest
+    build: ./Dockerfiles/faq-entity
+    ports:
+      - "5005:5005"
+    networks:
+      - code-network
+    restart: always
+networks:
+  code-network:
+    driver: bridge

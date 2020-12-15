@@ -1,0 +1,32 @@
+version: "2.0"
+
+intents:
+  - stock_price
+  - faq
+
+entities:
+  - company
+
+responses:
+  utter_stock_price:
+  - text: "Apple is free"
+
+  utter_faq:
+  - text: "FAQ Questions general"
+
+  utter_faq/ask_location:
+  - text: "FAQ Questions ask location"
+
+  utter_faq/ask_gender:
+  - text: "I'm very old ask gender"
+
+  utter_None:
+  - text: "Sorry I could not understand"
+
+slots:
+  company:
+    type: any
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

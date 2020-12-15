@@ -1,0 +1,13 @@
+version: "2.0"
+
+stories:
+
+- story: stock price
+  steps:
+  - intent: stock_price
+  - action: utter_stock_price
+
+- story: faq
+  steps:
+    - intent: faq
+    - action: utter_faq
